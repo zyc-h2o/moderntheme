@@ -41,11 +41,14 @@ div#main-outlet.wrap.not-found-container,
 #main-outlet-wrapper {
   gap: 0px !important;
 
+  top: 15px;
+  position: relative;
+
   #main-outlet {
     backdrop-filter: blur(3rem) !important;
     -webkit-backdrop-filter: blur(3rem);
     background-color: #0a0a0aa6 !important;
-    
+
     border-radius: 0px 18px 18px 0px;
   }
 
@@ -86,4 +89,32 @@ div#main-outlet.wrap.not-found-container,
   text-align: center;
   display: block;
   margin: auto;
+}
+
+:root {
+  --d-max-width: 95%;
+}
+
+#main-outlet-wrapper .sidebar-wrapper {
+  left: 10px;
+}
+
+#main-outlet {
+  width: 90%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+// support for topics
+.post-stream,
+.small-action .small-action-desc {
+  // not sure why actions are different from post-stream?
+  width: 100%;
+}
+
+.topic-body {
+  width: 100%;
 }

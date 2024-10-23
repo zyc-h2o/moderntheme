@@ -64,11 +64,6 @@ div#main-outlet.wrap.not-found-container,
   }
 }
 
-#main-outlet {
-  width: calc(100% - 260px);
-  margin-left: 260px;
-}
-
 .wizard-container {
   background-color: #131313a3;
 
@@ -112,11 +107,13 @@ div#main-outlet.wrap.not-found-container,
 }
 
 #main-outlet {
-  width: 90%;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+
+  width: calc(100% - 260px);
+  margin-left: 260px;
 }
 
 // support for topics

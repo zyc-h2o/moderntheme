@@ -46,31 +46,20 @@ legend {
 div#main-outlet.wrap.not-found-container,
 #main-outlet-wrapper {
 
-  #main-outlet,
+  #main-outlet {
+    backdrop-filter: blur(3rem) !important;
+    -webkit-backdrop-filter: blur(3rem);
+    background-color: #0a0a0aa6 !important;
+    
+    border-radius: 0px 18px 18px 0px;
+  }
+
   .sidebar-wrapper {
     backdrop-filter: blur(3rem) !important;
     -webkit-backdrop-filter: blur(3rem);
     background-color: #0a0a0aa6 !important;
 
-    input[type],
-    .select-kit.combo-box .select-kit-header,
-    .d-editor-textarea-wrapper,
-    div.ac-wrap {
-      background: transparent;
-    }
-  }
-}
-
-#main-outlet {
-  backdrop-filter: blur(3rem) !important;
-  -webkit-backdrop-filter: blur(3rem);
-  background-color: #0a0a0aa6 !important;
-
-  input[type],
-  .select-kit.combo-box .select-kit-header,
-  .d-editor-textarea-wrapper,
-  div.ac-wrap {
-    background: transparent;
+    border-radius: 18px 0px 0px 18px;
   }
 }
 

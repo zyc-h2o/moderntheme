@@ -1,8 +1,8 @@
 {
-  "name": "darkpixlz-ModernTheme",
+  "name": "pyx-modern-theme",
   "version": "4.0",
-  "repository": "darkpixlz/DarkPixlz-s-Modern-Theme",
-  "author": "darkpixlz",
+  "repository": "pyxfluff/moderntheme",
+  "author": "pyxfluff",
   "license": "MIT",
   "devDependencies": {
     "eslint-config-discourse": "^3.2.0"

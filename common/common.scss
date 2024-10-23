@@ -1,6 +1,6 @@
 // pyxfluff 2024
 
-@mixin Semitransparent-Box() {
+@mixin SemiTransparentBox() {
   border-radius: 12px;
   background: rgba(var(--secondary-rgb), .4);
   border: rgba(var(--secondary-rgb), .4)

@@ -68,3 +68,22 @@ div#main-outlet.wrap.not-found-container,
     background: transparent;
   }
 }
+
+.d-header {
+  @include BorderByOption("more");
+
+  top: 4px;
+}
+
+.d-header-wrap {
+  @include BorderByOption("more");
+
+  top: 5px;
+  width: 95%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+
+  text-align: center;
+  display: block;
+  margin: auto;
+}

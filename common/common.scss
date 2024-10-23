@@ -39,7 +39,7 @@ body {
 
 div#main-outlet.wrap.not-found-container,
 #main-outlet-wrapper {
-  gap: 0px;
+  gap: 0px !important;
 
   #main-outlet {
     backdrop-filter: blur(3rem) !important;

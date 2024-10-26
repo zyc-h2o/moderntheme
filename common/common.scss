@@ -146,12 +146,12 @@ div#main-outlet.wrap.not-found-container,
     &.toggle-like {
       .svg {
         transition: all 0.25s;
-
-        &:hover {
-          height: 1.25em;
-          width: 1.25em;
-        }
       }
     }
   }
+}
+
+nav.post-controls .actions .double-button button.like.d-hover .d-icon {
+  height: 1.25em;
+  width: 1.25em;
 }

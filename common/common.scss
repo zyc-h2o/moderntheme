@@ -152,6 +152,13 @@ div#main-outlet.wrap.not-found-container,
   }
 }
 
+button { // trying out a catch-all
+  background-color: rgba(var(--secondary-rgb), 0.75);
+
+  border-radius: 4px;
+  transition: all .25s
+}
+
 nav.post-controls .actions .double-button button.like, nav.post-controls .actions .double-button button.like .d-icon {
   transition: all .25s;
 

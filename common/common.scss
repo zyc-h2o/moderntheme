@@ -138,4 +138,17 @@ div#main-outlet.wrap.not-found-container,
   background-color: rgba(var(--secondary-rgb), 0.75);
   padding: 5px;
   margin-bottom: 0px;
+
+  button {
+    border-radius: 4px;
+    transition: all .25s; // idk why this broke in core dsc but it did
+
+    &.toggle-like:hover {
+      .svg {
+        transition: all .25s;
+        height: 1.25em;
+        width: 1.25em;
+      }
+    }
+  }
 }

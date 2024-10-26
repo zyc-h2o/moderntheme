@@ -7,7 +7,6 @@
 }
 
 @mixin BorderByOption($style) {
-
   // todo
   @if $style =="more" {
     border-radius: 18px;
@@ -131,10 +130,23 @@ div#main-outlet.wrap.not-found-container,
 // Posts
 
 .post-menu-area {
-  @include BorderByOption("more");
+  @include BorderByOption("less");
 
   width: fit-content;
   float: right;
 
   background-color: rgba(var(--secondary-rgb), 0.75);
+  padding: 5px;
+  margin-bottom: 0px;
+
+  button:not(:first-of-type)::before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transform: translateY(-50%);
+  }
 }

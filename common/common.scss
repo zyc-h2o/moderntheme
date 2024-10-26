@@ -169,6 +169,6 @@ nav.post-controls .actions .double-button button.like, nav.post-controls .action
 }
 
 details, input, summary {
-  background: rgba(var(--secondary-rgb), 0.5);
+  background: rgba(var(--secondary-rgb), 0.5) !important;
   border-radius: 8px !important;
 }

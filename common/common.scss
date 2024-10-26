@@ -152,10 +152,10 @@ div#main-outlet.wrap.not-found-container,
   }
 }
 
-button { // trying out a catch-all
-  background-color: rgba(var(--secondary-rgb), 0.75);
+button, .btn:not(.danger) { // trying out a catch-all
+  background-color: rgba(var(--secondary-rgb), 0.75) !important;
 
-  border-radius: 4px;
+  border-radius: 8px;
   transition: all .25s
 }
 

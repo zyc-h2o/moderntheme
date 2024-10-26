@@ -123,3 +123,18 @@ div#main-outlet.wrap.not-found-container,
 .topic-body {
   width: 100%;
 }
+
+.powered-by-discourse {
+  display: none; // i'll deal with you later
+}
+
+// Posts
+
+.post-menu-area {
+  @include BorderByOption("more");
+
+  width: fit-content;
+  float: right;
+
+  background-color: rgba(var(--secondary-rgb), 0.75);
+}

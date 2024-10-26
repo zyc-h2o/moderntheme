@@ -141,13 +141,16 @@ div#main-outlet.wrap.not-found-container,
 
   button {
     border-radius: 4px;
-    transition: all .25s; // idk why this broke in core dsc but it did
+    transition: all 0.25s;
 
-    &.toggle-like:hover {
+    &.toggle-like {
       .svg {
-        transition: all .25s;
-        height: 1.25em;
-        width: 1.25em;
+        transition: all 0.25s;
+
+        &:hover {
+          height: 1.25em;
+          width: 1.25em;
+        }
       }
     }
   }

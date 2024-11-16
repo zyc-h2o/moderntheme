@@ -182,9 +182,9 @@ details, input, summary {
   }
 }
 
-#main-outlet, .sidebar-wrapper {
+#main-outlet {
   background: 
-  linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #0a0a0aa6 50%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #000 50%),
     url('/uploads/default/original/1X/d300b854eb69a0e71248805607869df4861dcc05.jpeg');
   
   background-size: cover;

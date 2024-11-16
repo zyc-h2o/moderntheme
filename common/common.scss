@@ -184,7 +184,7 @@ details, input, summary {
 
 #main-outlet, .sidebar-wrapper {
   background: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0) 60%),
     url('/uploads/default/original/1X/eaadc2271a08f53abbe3d6e6200d35e1b70daad3.jpeg');
   
   background-size: cover;

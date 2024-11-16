@@ -52,6 +52,7 @@ div#main-outlet.wrap.not-found-container,
 
     border-radius: 0px 18px 18px 0px;
     margin-left: 0px;
+    padding-left: 15px;
   }
 
   .sidebar-wrapper {
@@ -59,7 +60,7 @@ div#main-outlet.wrap.not-found-container,
     -webkit-backdrop-filter: blur(3rem);
     background-color: #0a0a0aa6 !important;
 
-    border-radius: 18px 0px 0px 18px;
+    border-radius: 18px 0px 0px 0px;
     margin-right: 9px;
   }
 }
@@ -99,7 +100,7 @@ div#main-outlet.wrap.not-found-container,
 }
 
 :root {
-  --d-max-width: 95%;
+  --d-max-width: 85%;
 }
 
 #main-outlet-wrapper .sidebar-wrapper {

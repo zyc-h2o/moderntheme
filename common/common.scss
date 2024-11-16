@@ -19,7 +19,8 @@
 }
 
 :root {
-  --d-hover: rgba(var(--primary-very-low-rgb), .3) !important
+  --d-hover: rgba(var(--primary-very-low-rgb), .3) !important;
+  --d-max-width: 90%;
 }
 
 body {
@@ -99,10 +100,6 @@ div#main-outlet.wrap.not-found-container,
     margin: auto;
     width: 75%;
   }
-}
-
-:root {
-  --d-max-width: 85%;
 }
 
 #main-outlet-wrapper .sidebar-wrapper {

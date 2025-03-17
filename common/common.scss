@@ -200,8 +200,8 @@ controls ul li a,
     background: $BGPrimary !important;
 }
 
-img,
-.avatar-flair:not(.admin-new-feature-item__screenshot):not(.cooked img) {
+img:not(.admin-new-feature-item__screenshot):not(.cooked img),
+.avatar-flair {
     border-radius: 15% !important;
 }
 

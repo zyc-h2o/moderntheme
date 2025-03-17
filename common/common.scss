@@ -317,14 +317,19 @@ nav.post-controls .actions .double-button button.like .d-icon {
 .user-menu {
     @include ClearMenu();
 
+    
     .quick-access-panel ul {
         @include ClearMenu();
-
+        
         .notification.read {
             margin-bottom: 5px;
             background: transparent;
         }
     }
+}
+
+.top-tabs a {
+    border-radius: 0px !important
 }
 
 .dropdown-menu__item {

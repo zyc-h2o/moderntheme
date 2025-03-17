@@ -197,8 +197,8 @@ blockquote {
     border-left: 4px solid $BGPrimary !important;
 }
 
-.btn.no-text:not(.btn-transparent) {
-    border-radius: 100%;
+.btn.no-text:not(.btn-transparent):not(.fk-d-menu__trigger) {
+    border-radius: 100% !important;
     aspect-ratio: 1;
 
     background-color: $BGPrimary;

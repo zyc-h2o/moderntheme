@@ -242,14 +242,14 @@ nav.post-controls .actions .double-button button.like .d-icon {
         border-radius: 0px 0px 18px 18px
     }
 
-    &.staff-counters {
+    .staff-counters {
         @include SemiTransparentBox();
 
         backdrop-filter: blur(1rem);
         color: var(--primary);
     }
 
-    &.details {
+    .details {
         background-color: transparent
     }
 }

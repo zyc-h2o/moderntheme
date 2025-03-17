@@ -169,7 +169,7 @@ div#main-outlet.wrap.not-found-container,
     }
 }
 
-.btn-icon-text {
+.btn-icon-text:not(.btn-primary):not(.btn-danger) {
     background-color: $BGPrimary !important;
 
     border-radius: 8px;

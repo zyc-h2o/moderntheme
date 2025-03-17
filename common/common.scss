@@ -237,7 +237,8 @@ pre {
     @include BorderByOption("more");
 }
 
-.select-kit-body {
+.select-kit-body,
+.select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection, .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
     @include ClearMenu();
 
     transform: none !important;

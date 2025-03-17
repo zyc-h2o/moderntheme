@@ -218,10 +218,7 @@ pre {
     @include SemiTransparentBox();
     backdrop-filter: blur(2rem);
 
-    .d-editor-textarea-wrapper,
-    details,
-    input,
-    composer-popup {
+    .d-editor-textarea-wrapper, details, input {
         @include SemiTransparentBox();
         backdrop-filter: blur(2rem);
 
@@ -233,4 +230,11 @@ pre {
     .grippie {
         border-radius: 18px 18px 0px 0px;
     }
+}
+
+.composer-popup {
+    @include BorderByOption("more");
+
+    background: rgba(var(--highlight-rgb), .2);
+    backdrop-filter: blur(2rem);
 }

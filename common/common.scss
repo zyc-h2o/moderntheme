@@ -86,8 +86,7 @@ div#main-outlet.wrap.not-found-container,
         margin-bottom: 50px;
     }
 
-    .sidebar-wrapper,
-    .admin-area .sidebar-wrapper .admin-panel {
+    .sidebar-wrapper{
         backdrop-filter: blur(3rem) !important;
         -webkit-backdrop-filter: blur(3rem);
         background: $BGPrimary !important;
@@ -95,6 +94,13 @@ div#main-outlet.wrap.not-found-container,
         border-radius: 18px 0px 0px 0px;
         margin-right: 0px;
     }
+}
+
+// ??
+.admin-area .sidebar-wrapper .admin-panel {
+    backdrop-filter: blur(3rem) !important;
+        -webkit-backdrop-filter: blur(3rem);
+        background: $BGPrimary !important;
 }
 
 .wizard-container {
@@ -320,6 +326,10 @@ nav.post-controls .actions .double-button button.like .d-icon {
 
 .admin-site-settings-filter-controls {
     @include ClearMenu()
+}
+
+.admin-controls .controls {
+    background: transparent
 }
 
 .admin-nav {

@@ -20,7 +20,7 @@
     backdrop-filter: blur(3rem);
     -webkit-backdrop-filter: blur(3rem);
 
-    background-color: #04080cbf;
+    background-color: #04080cbf !important;
     border-radius: 18px;
     border: none;
 }
@@ -29,7 +29,7 @@
     backdrop-filter: blur(3rem);
     -webkit-backdrop-filter: blur(3rem);
 
-    background-color: #04080cbf;
+    background-color: #04080cbf !important;
     border: none;
 }
 
@@ -278,9 +278,9 @@ pre {
         border: none;
         border-color: transparent;
         border-radius: 8px 8px 0px 0px !important;
-
-        summary {
-            border: none;
-        }
     }
+}
+
+summary {
+    border: none;
 }

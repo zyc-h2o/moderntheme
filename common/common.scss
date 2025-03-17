@@ -196,7 +196,7 @@ button,
 
 .topic-footer-main-buttons .btn,
 controls ul li a,
-.btn-icon-text {
+.btn-icon-text:not(.create):not(.danger) {
     background: $BGPrimary !important;
 }
 
@@ -474,7 +474,6 @@ nav.post-controls .actions .double-button button.like .d-icon {
 .chat-message-container,
 .chat-transcript,
 controls ul li a,
-.btn-icon-text,
 .c-footer,
 .boxed.white {
     background: transparent !important

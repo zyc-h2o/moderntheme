@@ -1,5 +1,7 @@
 // pyxfluff 2024
 
+$BGPrimary: rgba(var(--secondary-rgb), 0.5);
+
 @mixin SemiTransparentBox() {
     border-radius: 12px;
     background: rgba(var(--secondary-rgb), .4);
@@ -20,7 +22,7 @@
     backdrop-filter: blur(3rem) !important;
     -webkit-backdrop-filter: blur(3rem);
 
-    background: rgba(var(--secondary-rgb), 0.5) !important;;
+    background: $BGPrimary !important;;
     border-radius: 18px !important;
     border: none !important;
 }
@@ -29,7 +31,7 @@
     backdrop-filter: blur(3rem) !important;
     -webkit-backdrop-filter: blur(3rem);
 
-    background: rgba(var(--secondary-rgb), 0.5) !important;
+    background: $BGPrimary !important;
     border: none !important;
 }
 
@@ -69,7 +71,7 @@ div#main-outlet.wrap.not-found-container,
     #main-outlet {
         backdrop-filter: blur(3rem) !important;
         -webkit-backdrop-filter: blur(3rem);
-        background-color: rgb(2 5 8 / 70%) !important;
+        background-color: $BGPrimary !important;
 
         width: 95%;
         border-radius: 0px 18px 18px 0px;
@@ -86,7 +88,7 @@ div#main-outlet.wrap.not-found-container,
     .sidebar-wrapper {
         backdrop-filter: blur(3rem) !important;
         -webkit-backdrop-filter: blur(3rem);
-        background-color: rgb(2 5 8 / 70%) !important;
+        background-color: $BGPrimary !important;
 
         border-radius: 18px 0px 0px 0px;
         margin-right: 0px;
@@ -190,10 +192,17 @@ code {
 }
 
 blockquote {
-    background: rgba(var(--secondary-rgb), 0.5) !important;
-    border-radius: 4px 18px 18px 4px !important;
+    background: $BGPrimary !important;
+    border-radius: 4px 8px 8px 4px !important;
 
-    border-left: 4px solid rgba(var(--secondary-rgb), 0.5) !important;
+    border-left: 4px solid $BGPrimary !important;
+}
+
+.btn.no-text {
+    border-radius: 100%;
+    aspect-ratio: 1;
+
+    background-color: $BGPrimary;
 }
 
 nav.post-controls .actions .double-button button.like,

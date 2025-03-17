@@ -169,12 +169,12 @@ div#main-outlet.wrap.not-found-container,
     }
 }
 
-.btn-icon-text:not(.btn-primary):not(.btn-danger),
-.reason details, .reason details summary {
-    //background-color: $BGPrimary !important;
-
+button {
     border-radius: 8px;
-    transition: all .25s
+}
+
+.topic-footer-main-buttons .btn {
+    background-color: $BGPrimary !important;
 }
 
 img,

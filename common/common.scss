@@ -79,7 +79,7 @@ div#main-outlet.wrap.not-found-container,
 
         padding-right: 10px;
         margin-right: auto;
-        
+
         margin-bottom: 50px;
     }
 
@@ -258,6 +258,18 @@ pre {
 }
 
 .topic-list {
-    @include ClearMenu();
+    @include ClearMenuNoRounding();
+
+    border-radius: 18px 0px 18px 18px;
 }
 
+.navigation-controls {
+    margin-bottom: 0px;
+
+    button {
+        @include ClearMenuNoRounding();
+        
+        height: 100%;
+        border-radius: 8px 8px 0px 0px
+    }
+}

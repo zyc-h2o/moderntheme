@@ -289,3 +289,9 @@ pre {
     }
 }
 
+#suggested-topics-title {
+    @include ClearMenuNoRounding();
+
+    border-radius: 18px 18px 0px 0px;
+}
+

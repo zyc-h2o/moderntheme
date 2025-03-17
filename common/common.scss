@@ -321,7 +321,7 @@ nav.post-controls .actions .double-button button.like .d-icon {
     border-radius: 18px !important;
 }
 
-.user-badge {
+.user-badge, .more-user-badges a {
     @include ClearMenu()
 }
 

@@ -132,6 +132,8 @@ div#main-outlet.wrap.not-found-container,
     margin: auto;
     position: fixed;
 
+    background: $BGPrimary
+
 
     .d-header {
         @include BorderByOption("more");
@@ -442,7 +444,6 @@ nav.post-controls .actions .double-button button.like .d-icon {
 
 .chat-message-container,
 .chat-transcript,
-.topic-footer-main-buttons .btn,
 controls ul li a,
 .btn-icon-text,
 .c-footer,

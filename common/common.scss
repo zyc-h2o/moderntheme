@@ -85,7 +85,7 @@ div#main-outlet.wrap.not-found-container,
         margin-bottom: 50px;
     }
 
-    .sidebar-wrapper{
+    .sidebar-wrapper {
         backdrop-filter: blur(3rem) !important;
         -webkit-backdrop-filter: blur(3rem);
         background: $BGPrimary !important;
@@ -98,11 +98,12 @@ div#main-outlet.wrap.not-found-container,
 // ??
 .admin-area .sidebar-wrapper .admin-panel {
     backdrop-filter: blur(3rem) !important;
-        -webkit-backdrop-filter: blur(3rem);
-        background: $BGPrimary !important;
+    -webkit-backdrop-filter: blur(3rem);
+    background: $BGPrimary !important;
 }
 
-.admin-section-landing-item, .group-box,
+.admin-section-landing-item,
+.group-box,
 .admin-config-area-card,
 .form-kit__control-composer .d-editor-textarea-wrapper {
     @include ClearMenu()
@@ -254,28 +255,30 @@ nav.post-controls .actions .double-button button.like .d-icon {
     border-radius: 18px;
 }
 
-.user-main .about {
-    background: var(--profile-bg-img);
+.user-main {
+    overflow-x: hidden;
 
-    &.has-background .user-profile-image {
+    .about {
+        background: var(--profile-bg-img);
         padding: 10px;
-        border-radius: 18px;
 
-        background: none !important;
-    }
+        &.has-background .user-profile-image {
+            border-radius: 18px;
 
-    .staff-counters {
-        @include SemiTransparentBox();
+            background: none !important;
+        }
 
-        margin-bottom: 5px;
-        color: var(--primary);
-        backdrop-filter: blur(1rem);
-    }
+        .staff-counters {
+            @include SemiTransparentBox();
 
-    .details {
-        @include SemiTransparentBox();
-        
-        background-color: transparent
+            margin-bottom: 5px;
+            color: var(--primary);
+            backdrop-filter: blur(1rem);
+        }
+
+        .details {
+            @include SemiTransparentBox();
+        }
     }
 }
 

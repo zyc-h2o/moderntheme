@@ -169,8 +169,8 @@ div#main-outlet.wrap.not-found-container,
     }
 }
 
-.btn:not(.danger):not(.btn-transparent) {
-    //background-color: $BGPrimary !important;
+.btn-icon-text {
+    background-color: $BGPrimary !important;
 
     border-radius: 8px;
     transition: all .25s

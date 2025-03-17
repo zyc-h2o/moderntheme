@@ -258,9 +258,10 @@ nav.post-controls .actions .double-button button.like .d-icon {
     background: var(--profile-bg-img);
 
     &.has-background .user-profile-image {
+        padding: 10px;
         border-radius: 18px;
 
-        display: none;
+        background: none !important;
     }
 
     .staff-counters {
@@ -272,6 +273,8 @@ nav.post-controls .actions .double-button button.like .d-icon {
     }
 
     .details {
+        @include SemiTransparentBox();
+        
         background-color: transparent
     }
 }

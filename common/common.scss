@@ -221,6 +221,8 @@ pre {
     .d-editor-textarea-wrapper, details, input {
         @include SemiTransparentBox();
         backdrop-filter: blur(2rem);
+
+        border: none;
     }
 
     width: 95%;

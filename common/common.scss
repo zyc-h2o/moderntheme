@@ -218,7 +218,10 @@ pre {
     @include SemiTransparentBox();
     backdrop-filter: blur(2rem);
 
-    .d-editor-textarea-wrapper, details, input, summary {
+    .d-editor-textarea-wrapper,
+    details,
+    input,
+    summary {
         @include SemiTransparentBox();
         backdrop-filter: blur(2rem);
 
@@ -238,8 +241,23 @@ pre {
 }
 
 .select-kit-body,
-.select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection, .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
+.select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection,
+.select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
     @include ClearMenu();
 
     transform: none !important;
+}
+
+.topic-list-body {
+    &:first-child {
+        border-radius: 18px 18px 0px 0px;
+    }
+
+    &:last-child {
+        border-radius: 0px 0px 18px 18px;
+    }
+
+    tr {
+        @include ClearMenu()
+    }
 }

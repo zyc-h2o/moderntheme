@@ -223,6 +223,7 @@ pre {
         backdrop-filter: blur(2rem);
 
         border: none;
+        border-color: transparent;
     }
 
     width: 95%;
@@ -232,7 +233,7 @@ pre {
     }
 }
 
-.composer-popup {
+.composer-popup-container {
     @include BorderByOption("more");
 
     background: rgba(var(--highlight-rgb), .2);

@@ -215,9 +215,14 @@ img:not(.admin-new-feature-item__screenshot):not(.cooked img):not(.mfp-img),
 details,
 input,
 summary,
-pre,
+pre {
+    &:not(pre code) {
+        @include ClearMenu();
+    }
+}
+
 code {
-    @include ClearMenu();
+    background: transparent;
 }
 
 blockquote {
@@ -227,7 +232,7 @@ blockquote {
     border-left: 4px solid $BGPrimary !important;
 }
 
-.btn.no-text:not(.btn-transparent):not(.topic-map__views-trigger):not(.notifications-tracking-btn):not(.show-all) {
+.btn.no-text:not(.btn-transparent):not(.topic-map__views-trigger):not(.notifications-tracking-btn):not(.show-all):not(.profile-tab-btn) {
     border-radius: 100% !important;
     aspect-ratio: 1;
 
@@ -316,6 +321,7 @@ nav.post-controls .actions .double-button button.like .d-icon {
         @include ClearMenu();
 
         .notification.read {
+            margin-bottom: 5px;
             background: transparent;
         }
     }

@@ -25,6 +25,14 @@
     border: none;
 }
 
+@mixin ClearMenuNoRounding() {
+    backdrop-filter: blur(3rem);
+    -webkit-backdrop-filter: blur(3rem);
+
+    background-color: #04080cbf;
+    border: none;
+}
+
 :root {
     --d-hover: rgba(var(--primary-very-low-rgb), .3) !important;
     --d-max-width: 90%;
@@ -249,6 +257,6 @@ pre {
 }
 
 .topic-list-body tr td {
-    @include ClearMenu();
+    @include ClearMenuNoRounding();
 }
 

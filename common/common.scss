@@ -218,7 +218,10 @@ pre {
     @include SemiTransparentBox();
     backdrop-filter: blur(2rem);
 
-    .d-editor-textarea-wrapper, details, input {
+    .d-editor-textarea-wrapper,
+    details,
+    input,
+    composer-popup {
         @include SemiTransparentBox();
         backdrop-filter: blur(2rem);
 

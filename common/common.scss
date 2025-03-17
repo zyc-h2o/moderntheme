@@ -442,7 +442,9 @@ nav.post-controls .actions .double-button button.like .d-icon {
     }
 }
 
-.alert {
+.alert,
+.fk-d-tooltip__content {
+    backdrop-filter: blur(2rem);
     border-radius: 8px;
     opacity: .7
 }

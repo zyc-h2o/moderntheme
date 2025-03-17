@@ -103,6 +103,10 @@ div#main-outlet.wrap.not-found-container,
         background: $BGPrimary !important;
 }
 
+.admin-section-landing-item, .group-box {
+    @include ClearMenu()
+}
+
 .wizard-container {
     background: #131313a3;
 

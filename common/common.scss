@@ -20,7 +20,7 @@
     backdrop-filter: blur(3rem) !important;
     -webkit-backdrop-filter: blur(3rem);
 
-    background-color: rgba(4,8,12,.4) !important;
+    background-color: rgba(4, 8, 12, .4) !important;
     border-radius: 18px !important;
     border: none !important;
 }
@@ -29,7 +29,7 @@
     backdrop-filter: blur(3rem) !important;
     -webkit-backdrop-filter: blur(3rem);
 
-    background-color: rgba(4,8,12,.4) !important;
+    background-color: rgba(4, 8, 12, .4) !important;
     border: none !important;
 }
 
@@ -69,7 +69,7 @@ div#main-outlet.wrap.not-found-container,
     #main-outlet {
         backdrop-filter: blur(3rem) !important;
         -webkit-backdrop-filter: blur(3rem);
-        background-color: #0a0a0aa6 !important;
+        background-color: rgb(2 5 8 / 70%) !important;
 
         width: 95%;
         border-radius: 0px 18px 18px 0px;
@@ -86,7 +86,7 @@ div#main-outlet.wrap.not-found-container,
     .sidebar-wrapper {
         backdrop-filter: blur(3rem) !important;
         -webkit-backdrop-filter: blur(3rem);
-        background-color: #0a0a0aa6 !important;
+        background-color: rgb(2 5 8 / 70%) !important;
 
         border-radius: 18px 0px 0px 0px;
         margin-right: 0px;
@@ -176,14 +176,16 @@ button,
     transition: all .25s
 }
 
-img, .avatar-flair {
+img,
+.avatar-flair {
     border-radius: 15% !important;
 }
 
 details,
 input,
 summary,
-pre {
+pre,
+code {
     background: rgba(var(--secondary-rgb), 0.5) !important;
     border-radius: 18px !important;
 }
@@ -272,14 +274,16 @@ nav.post-controls .actions .double-button button.like .d-icon {
     border-radius: 0px 0px 18px 18px;
 }
 
-.navigation-controls, .navigation-container {
+.navigation-controls,
+.navigation-container {
     margin-bottom: 0px;
-    
+
     ol {
         margin: 0px;
     }
 
-    button, details {
+    button,
+    details {
         @include ClearMenuNoRounding();
 
         height: 100%;
@@ -298,7 +302,7 @@ nav.post-controls .actions .double-button button.like .d-icon {
     @include ClearMenuNoRounding();
 
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     border-radius: 18px 18px 0px 0px;
 }
 
@@ -311,17 +315,24 @@ nav.post-controls .actions .double-button button.like .d-icon {
     }
 }
 
-.user-card .card-content, .group-card .card-content {
+.user-card .card-content,
+.group-card .card-content {
     backdrop-filter: blur(1rem);
     background: transparent;
     border-radius: 18px;
 }
 
-#user-card, .fk-d-menu {
+#user-card,
+.fk-d-menu {
     border-radius: 18px !important;
 }
 
-.user-badge, .more-user-badges a {
+.user-badge,
+.more-user-badges a {
     @include ClearMenu()
 }
 
+.alert {
+    border-radius: 8px;
+    opacity: .7
+}

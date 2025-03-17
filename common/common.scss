@@ -216,7 +216,13 @@ pre {
 // Composer
 #reply-control {
     @include SemiTransparentBox();
-    
+    backdrop-filter: blur(2rem);
+
+    .d-editor-textarea-wrapper {
+        @include SemiTransparentBox();
+        backdrop-filter: blur(2rem);
+    }
+
     width: 95%;
 
     .grippie {

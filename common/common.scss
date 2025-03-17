@@ -22,7 +22,7 @@ $BGPrimary: rgba(var(--secondary-rgb), 0.5);
     backdrop-filter: blur(3rem);
     -webkit-backdrop-filter: blur(3rem);
 
-    background: $BGPrimary !important;;
+    background: $BGPrimary;;
     border-radius: 18px !important;
     border: none !important;
 }
@@ -31,7 +31,7 @@ $BGPrimary: rgba(var(--secondary-rgb), 0.5);
     backdrop-filter: blur(3rem);
     -webkit-backdrop-filter: blur(3rem);
 
-    background: $BGPrimary !important;
+    background: $BGPrimary;
     border: none !important;
 }
 

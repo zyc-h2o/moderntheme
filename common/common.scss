@@ -132,7 +132,7 @@ div#main-outlet.wrap.not-found-container,
     margin: auto;
     position: fixed;
 
-    background: $BGPrimary
+    background: $BGPrimary;
 
 
     .d-header {
@@ -255,8 +255,12 @@ nav.post-controls .actions .double-button button.like .d-icon {
 }
 
 .user-main .about {
+    background: var(--profile-bg-img);
+
     &.has-background .user-profile-image {
-        border-radius: 18px
+        border-radius: 18px;
+
+        display: none;
     }
 
     .staff-counters {

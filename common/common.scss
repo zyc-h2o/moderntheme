@@ -342,8 +342,13 @@ nav.post-controls .actions .double-button button.like .d-icon {
 }
 
 .user-badge,
-.more-user-badges a {
-    @include ClearMenu()
+.more-user-badges a,
+.reviewable-filters {
+    @include ClearMenu();
+
+    details, summary {
+        background-color: none !important;
+    }
 }
 
 .alert {

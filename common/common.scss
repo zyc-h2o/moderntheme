@@ -265,6 +265,10 @@ pre {
 
 .navigation-controls, .navigation-container {
     margin-bottom: 0px;
+    
+    ol {
+        margin: 0px;
+    }
 
     button, details {
         @include ClearMenuNoRounding();
@@ -273,6 +277,10 @@ pre {
 
         border: none;
         border-color: transparent;
-        border-radius: 8px 8px 0px 0px !important
+        border-radius: 8px 8px 0px 0px !important;
+
+        summary {
+            border: none;
+        }
     }
 }

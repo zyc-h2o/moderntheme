@@ -1,189 +1,203 @@
 // pyxfluff 2024
 
 @mixin SemiTransparentBox() {
-  border-radius: 12px;
-  background: rgba(var(--secondary-rgb), .4);
-  border: rgba(var(--secondary-rgb), .4)
+    border-radius: 12px;
+    background: rgba(var(--secondary-rgb), .4);
+    border: rgba(var(--secondary-rgb), .4)
 }
 
 @mixin BorderByOption($style) {
+    @if $style =="more" {
+        border-radius: 18px;
+    }
 
-  // todo
-  @if $style =="more" {
+    @else {
+        border-radius: 8px;
+    }
+}
+
+@mixin ClearMenu() {
+    backdrop-filter: blur(3rem);
+    -webkit-backdrop-filter: blur(3rem);
+
+    background-color: #04080cbf;
     border-radius: 18px;
-  }
-
-  @else {
-    border-radius: 8px;
-  }
 }
 
 :root {
-  --d-hover: rgba(var(--primary-very-low-rgb), .3) !important;
-  --d-max-width: 90%;
+    --d-hover: rgba(var(--primary-very-low-rgb), .3) !important;
+    --d-max-width: 90%;
 }
 
 html {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body {
-  @if $Background_Type =="tile" {
-    background-image: linear-gradient(0deg,
-        rgba(var(--secondary-rgb), 1) 0%,
-        rgba(var(--secondary-rgb), 0.75) 100%),
-      url($Background_Image);
-    background-size: $Tile_Size;
-  }
+    @if $Background_Type =="tile" {
+        background-image: linear-gradient(0deg,
+                rgba(var(--secondary-rgb), 1) 0%,
+                rgba(var(--secondary-rgb), 0.75) 100%),
+            url($Background_Image);
+        background-size: $Tile_Size;
+    }
 
-  @else {
-    background-image: url($Background_Image) !important;
-    background-size: cover;
-  }
+    @else {
+        background-image: url($Background_Image) !important;
+        background-size: cover;
+    }
 }
 
 div#main-outlet.wrap.not-found-container,
 #main-outlet-wrapper {
-  gap: 0px !important;
-  top: 15px;
-  position: relative;
+    gap: 0px !important;
+    top: 15px;
+    position: relative;
 
-  margin-top: var(--header-offset);
+    margin-top: var(--header-offset);
 
-  #main-outlet {
-    backdrop-filter: blur(3rem) !important;
-    -webkit-backdrop-filter: blur(3rem);
-    background-color: #0a0a0aa6 !important;
+    #main-outlet {
+        backdrop-filter: blur(3rem) !important;
+        -webkit-backdrop-filter: blur(3rem);
+        background-color: #0a0a0aa6 !important;
 
-    border-radius: 0px 18px 18px 0px;
-    margin-left: 0px;
+        border-radius: 0px 18px 18px 0px;
+        margin-left: 0px;
 
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-  .sidebar-wrapper {
-    backdrop-filter: blur(3rem) !important;
-    -webkit-backdrop-filter: blur(3rem);
-    background-color: #0a0a0aa6 !important;
+    .sidebar-wrapper {
+        backdrop-filter: blur(3rem) !important;
+        -webkit-backdrop-filter: blur(3rem);
+        background-color: #0a0a0aa6 !important;
 
-    border-radius: 18px 0px 0px 0px;
-    margin-right: 9px;
-  }
+        border-radius: 18px 0px 0px 0px;
+        margin-right: 9px;
+    }
 }
 
 .wizard-container {
-  background-color: #131313a3;
+    background-color: #131313a3;
 
-  input[type],
-  .select-kit.combo-box .select-kit-header,
-  .d-editor-textarea-wrapper,
-  div.ac-wrap {
-    background: transparent;
-  }
+    input[type],
+    .select-kit.combo-box .select-kit-header,
+    .d-editor-textarea-wrapper,
+    div.ac-wrap {
+        background: transparent;
+    }
 }
 
 .d-header-wrap {
-  @include BorderByOption("more");
-
-  top: 5px;
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 5px;
-
-  text-align: center;
-  display: block;
-  margin: auto;
-  position: fixed;
-
-
-  .d-header {
     @include BorderByOption("more");
 
-    top: 4px;
+    top: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+
+    text-align: center;
+    display: block;
     margin: auto;
-    width: 75%;
-  }
+    position: fixed;
+
+
+    .d-header {
+        @include BorderByOption("more");
+
+        top: 4px;
+        margin: auto;
+        width: 75%;
+    }
 }
 
 #main-outlet-wrapper .sidebar-wrapper {
-  left: 10px;
+    left: 10px;
 }
 
 #main-outlet {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
 
 // support for topics
 .post-stream,
 .small-action .small-action-desc {
-  // not sure why actions are different from post-stream?
-  width: 100%;
+    // not sure why actions are different from post-stream?
+    width: 100%;
 }
 
 .topic-body {
-  width: 100%;
+    width: 100%;
 }
 
 .powered-by-discourse {
-  display: none; // i'll deal with you later
+    display: none; // i'll deal with you later
 }
 
 // Posts
 
 .post-menu-area {
-  @include BorderByOption("less");
+    @include BorderByOption("less");
 
-  width: fit-content;
-  float: right;
+    width: fit-content;
+    float: right;
 
-  background-color: rgba(var(--secondary-rgb), 0.75);
-  padding: 5px;
-  margin-bottom: 0px;
+    background-color: rgba(var(--secondary-rgb), 0.75);
+    padding: 5px;
+    margin-bottom: 0px;
 
-  button {
-    border-radius: 4px;
-    transition: all 0.25s;
-    background: none !important;
-
-    &.toggle-like {
-      .svg {
+    button {
+        border-radius: 4px;
         transition: all 0.25s;
-      }
+        background: none !important;
+
+        &.toggle-like {
+            .svg {
+                transition: all 0.25s;
+            }
+        }
     }
-  }
 }
 
-button, .btn:not(.danger) { // trying out a catch-all
-  // background-color: rgba(var(--secondary-rgb), 0.75) !important;
+button,
+.btn:not(.danger) {
+    // trying out a catch-all
+    // background-color: rgba(var(--secondary-rgb), 0.75) !important;
 
-  border-radius: 8px;
-  transition: all .25s
+    border-radius: 8px;
+    transition: all .25s
 }
 
-nav.post-controls .actions .double-button button.like, nav.post-controls .actions .double-button button.like .d-icon {
-  transition: all .25s;
+nav.post-controls .actions .double-button button.like,
+nav.post-controls .actions .double-button button.like .d-icon {
+    transition: all .25s;
 
-  &.d-hover .d-icon {
-    height: 1.25em;
-    width: 1.25em;
-  }
+    &.d-hover .d-icon {
+        height: 1.25em;
+        width: 1.25em;
+    }
 }
 
-details, input, summary, pre {
-  background: rgba(var(--secondary-rgb), 0.5) !important;
-  border-radius: 18px !important;
+details,
+input,
+summary,
+pre {
+    background: rgba(var(--secondary-rgb), 0.5) !important;
+    border-radius: 18px !important;
 }
 
 // Profiles
 
 .user-main {
-  .details, .user-content {
-    background: none;
-  }
+
+    .details,
+    .user-content {
+        background: none;
+    }
 }
 
 #main-outlet {
@@ -194,4 +208,12 @@ details, input, summary, pre {
   
   background-size: cover;
   */
+}
+
+.dropdown-menu {
+    @include ClearMenu();
+}
+
+.dropdown-menu__item {
+    margin-bottom: 5px;
 }

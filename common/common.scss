@@ -215,7 +215,8 @@ img:not(.admin-new-feature-item__screenshot):not(.cooked img):not(.mfp-img),
 details,
 input,
 summary,
-pre {
+pre,
+aside {
     &:not(pre code) {
         @include ClearMenu();
     }

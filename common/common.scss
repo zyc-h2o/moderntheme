@@ -134,7 +134,7 @@ div.not-found-container,
     position: fixed;
 
 
-    .d-header {
+    .d-header, &.d-header wrap {
         @include BorderByOption("more");
 
         top: 4px;

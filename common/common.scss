@@ -22,7 +22,8 @@ $BGPrimary: rgba(var(--secondary-rgb), 0.5);
     backdrop-filter: blur(3rem);
     -webkit-backdrop-filter: blur(3rem);
 
-    background: $BGPrimary;;
+    background: $BGPrimary;
+    ;
     border-radius: 18px !important;
     border: none !important;
 }
@@ -225,16 +226,32 @@ nav.post-controls .actions .double-button button.like .d-icon {
     }
 }
 
-.user-main  {
-  background: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #000 40%),
-    var(--profile-bg-img);
-  
-  background-size: cover;
+.user-main {
+    background:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #000 50%),
+        var(--profile-bg-img);
+
+    background-size: cover;
+
+    padding: 10px;
+    border-radius: 18px;
 }
 
-.user-main .about .details {
-    background-color: transparent
+.user-main .about {
+    &.has-background .user-profile-image {
+        border-radius: 0px 0px 18px 18px
+    }
+
+    &.staff-counters {
+        @include SemiTransparentBox();
+
+        backdrop-filter: blur(1rem);
+        color: var(--primary);
+    }
+
+    &.details {
+        background-color: transparent
+    }
 }
 
 .dropdown-menu {
@@ -349,7 +366,8 @@ nav.post-controls .actions .double-button button.like .d-icon {
 .reviewable-filters {
     @include ClearMenu();
 
-    details, summary {
+    details,
+    summary {
         background: none !important;
     }
 }

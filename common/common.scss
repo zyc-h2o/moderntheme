@@ -71,7 +71,7 @@ div#main-outlet.wrap.not-found-container,
     #main-outlet {
         backdrop-filter: blur(3rem) !important;
         -webkit-backdrop-filter: blur(3rem);
-        background-color: $BGPrimary !important;
+        background: $BGPrimary !important;
 
         width: 95%;
         border-radius: 0px 18px 18px 0px;
@@ -88,7 +88,7 @@ div#main-outlet.wrap.not-found-container,
     .sidebar-wrapper {
         backdrop-filter: blur(3rem) !important;
         -webkit-backdrop-filter: blur(3rem);
-        background-color: $BGPrimary !important;
+        background: $BGPrimary !important;
 
         border-radius: 18px 0px 0px 0px;
         margin-right: 0px;
@@ -96,7 +96,7 @@ div#main-outlet.wrap.not-found-container,
 }
 
 .wizard-container {
-    background-color: #131313a3;
+    background: #131313a3;
 
     input[type],
     .select-kit.combo-box .select-kit-header,
@@ -152,7 +152,7 @@ div#main-outlet.wrap.not-found-container,
     width: fit-content;
     float: right;
 
-    background-color: $BGPrimary;
+    background: $BGPrimary;
     padding: 5px;
     margin-bottom: 0px;
 
@@ -174,7 +174,7 @@ button {
 }
 
 .topic-footer-main-buttons .btn {
-    background-color: $BGPrimary !important;
+    background: $BGPrimary !important;
 }
 
 img,
@@ -201,7 +201,7 @@ blockquote {
     border-radius: 100% !important;
     aspect-ratio: 1;
 
-    background-color: $BGPrimary;
+    background: $BGPrimary;
 }
 
 nav.post-controls .actions .double-button button.like,
@@ -347,7 +347,7 @@ nav.post-controls .actions .double-button button.like .d-icon {
     @include ClearMenu();
 
     details, summary {
-        background-color: none !important;
+        background: none !important;
     }
 }
 
@@ -357,5 +357,5 @@ nav.post-controls .actions .double-button button.like .d-icon {
 }
 
 .list-controls .combo-box .combo-box-header {
-    background-color: none !important;
+    background: none !important;
 }

@@ -435,7 +435,8 @@ nav.post-controls .actions .double-button button.like .d-icon {
     }
 }
 
-#suggested-topics-title {
+#suggested-topics-title,
+#related-topics-title {
     @include ClearMenuNoRounding();
 
     padding: 10px;

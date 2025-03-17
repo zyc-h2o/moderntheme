@@ -384,3 +384,20 @@ nav.post-controls .actions .double-button button.like .d-icon {
 .navigation-container ol li details {
     background: none !important;
 }
+
+// Chat
+.chat-drawer .chat-drawer-container {
+    @include ClearMenuNoRounding();
+    
+    background: $BGPrimary !important;
+}
+
+.c-navbar-container {
+    background: $BGPrimary !important;
+
+    border-radius: 8px 8px 0px 0px;
+}
+
+.chat-message-container, .chat-transcript, .topic-footer-main-buttons .btn, controls ul li a, .btn-icon-text, .c-footer {
+    background: transparent !important
+}

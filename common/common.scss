@@ -197,7 +197,7 @@ blockquote {
     border-left: 4px solid $BGPrimary !important;
 }
 
-.btn.no-text:not(.btn-transparent):not(.topic-map__views-trigger) {
+.btn.no-text:not(.btn-transparent):not(.topic-map__views-trigger):not(.notifications-tracking-btn) {
     border-radius: 100% !important;
     aspect-ratio: 1;
 

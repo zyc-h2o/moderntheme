@@ -248,16 +248,7 @@ pre {
     transform: none !important;
 }
 
-.topic-list-body {
-    &:first-child {
-        border-radius: 18px 18px 0px 0px;
-    }
-
-    &:last-child {
-        border-radius: 0px 0px 18px 18px;
-    }
-
-    tr {
-        @include ClearMenu()
-    }
+.topic-list-body tr td {
+    @include ClearMenu();
 }
+

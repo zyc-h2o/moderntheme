@@ -459,3 +459,12 @@ controls ul li a,
 .topic-statuses {
     @include ClearMenu()
 }
+
+.topic-statuses {
+    padding: 3px 10px 3px 10px;
+    margin-right: 5px;
+}
+
+..archetype-private_message .topic-map section {
+    background: transparent !important;
+}

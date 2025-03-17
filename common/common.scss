@@ -152,7 +152,7 @@ div#main-outlet.wrap.not-found-container,
     width: fit-content;
     float: right;
 
-    background-color: rgba(var(--secondary-rgb), 0.75);
+    background-color: $BGPrimary;
     padding: 5px;
     margin-bottom: 0px;
 
@@ -171,8 +171,7 @@ div#main-outlet.wrap.not-found-container,
 
 button,
 .btn:not(.danger) {
-    // trying out a catch-all
-    // background-color: rgba(var(--secondary-rgb), 0.75) !important;
+    background-color: $BGPrimary !important;
 
     border-radius: 8px;
     transition: all .25s

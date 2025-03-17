@@ -201,8 +201,12 @@ controls ul li a,
 }
 
 img,
-.avatar-flair {
+.avatar-flair:not(.admin-new-feature-item__screenshot):not(.cooked img) {
     border-radius: 15% !important;
+}
+
+.cooked img, .admin-new-feature-item__screenshot {
+    border-radius: 8px 
 }
 
 details,
@@ -250,13 +254,18 @@ nav.post-controls .actions .double-button button.like .d-icon {
 
 .user-main {
     background:
-        linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #000 50%),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #000 65%),
         var(--profile-bg-img);
 
     background-size: cover;
+    background-position: top;
 
     padding: 10px;
     border-radius: 18px;
+}
+
+.dashboard-next .nav::after, .dashboard-next .nav::before {
+    background: transparent !important
 }
 
 .user-main {
@@ -486,7 +495,9 @@ controls ul li a,
 .regular.contents,
 .topic-map,
 .topic-statuses {
-    @include ClearMenu()
+    @include ClearMenuNoRounding();
+
+    border-radius: 6px;
 }
 
 .topic-statuses {
@@ -496,4 +507,8 @@ controls ul li a,
 
 .archetype-private_message .topic-map section {
     background: transparent !important;
+}
+
+.header-dropdown-toggle { 
+    margin-left: 7px;
 }

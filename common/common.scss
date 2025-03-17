@@ -225,14 +225,12 @@ nav.post-controls .actions .double-button button.like .d-icon {
     }
 }
 
-#main-outlet {
-    /*
+.user-main  {
   background: 
     linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #000 50%),
-    url('/uploads/default/original/1X/d300b854eb69a0e71248805607869df4861dcc05.jpeg');
+    url(var(--profile-bg-img));
   
   background-size: cover;
-  */
 }
 
 .dropdown-menu {
@@ -278,7 +276,8 @@ nav.post-controls .actions .double-button button.like .d-icon {
     transform: none !important;
 }
 
-.fk-d-menu__inner-content {
+.fk-d-menu__inner-content,
+.badge-card {
     @include ClearMenu();
 }
 

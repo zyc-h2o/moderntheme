@@ -141,6 +141,8 @@ div#main-outlet.wrap.not-found-container,
         margin: auto;
         width: 75%;
 
+        background: transparent;
+
         .wrap {
             @include ClearMenu()
         }

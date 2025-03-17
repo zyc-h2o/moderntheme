@@ -236,3 +236,9 @@ pre {
 .composer-popup {
     @include BorderByOption("more");
 }
+
+.select-kit-body {
+    @include ClearMenu();
+
+    transform: none !important;
+}

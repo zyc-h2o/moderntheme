@@ -133,8 +133,6 @@ div#main-outlet.wrap.not-found-container,
     margin: auto;
     position: fixed;
 
-    background: $BGPrimary;
-
 
     .d-header {
         @include BorderByOption("more");
@@ -142,6 +140,10 @@ div#main-outlet.wrap.not-found-container,
         top: 4px;
         margin: auto;
         width: 75%;
+
+        .wrap {
+            @include ClearMenu()
+        }
     }
 }
 
@@ -269,7 +271,7 @@ nav.post-controls .actions .double-button button.like .d-icon {
         }
 
         .staff-counters {
-            @include SemiTransparentBox();
+            @include ClearMenu();
 
             margin-bottom: 5px;
             color: var(--primary);
@@ -277,7 +279,16 @@ nav.post-controls .actions .double-button button.like .d-icon {
         }
 
         .details {
-            @include SemiTransparentBox();
+            @include ClearMenu();
+
+            .primary {
+                margin: 10px;
+                margin-top: 0px !important;
+
+                .controls {
+                    margin-right: 15px
+                }
+            }
         }
     }
 }

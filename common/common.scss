@@ -86,7 +86,8 @@ div#main-outlet.wrap.not-found-container,
         margin-bottom: 50px;
     }
 
-    .sidebar-wrapper {
+    .sidebar-wrapper,
+    .admin-area .sidebar-wrapper .admin-panel {
         backdrop-filter: blur(3rem) !important;
         -webkit-backdrop-filter: blur(3rem);
         background: $BGPrimary !important;
@@ -170,7 +171,8 @@ div#main-outlet.wrap.not-found-container,
     }
 }
 
-button, .controls ul li a {
+button,
+.controls ul li a {
     border-radius: 8px !important;
 }
 
@@ -305,10 +307,25 @@ nav.post-controls .actions .double-button button.like .d-icon {
     @include ClearMenu();
 }
 
-.topic-list {
+.topic-list,
+.admin-detail {
     @include ClearMenuNoRounding();
 
     border-radius: 0px 0px 18px 18px;
+
+    &.pull-left {
+        border-radius: 0px 18px 18px 0px;
+    }
+}
+
+.admin-site-settings-filter-controls {
+    @include ClearMenu()
+}
+
+.admin-nav {
+    @include ClearMenuNoRounding();
+
+    border-radius: 18px 0px 0px 18px;
 }
 
 .navigation-controls,
@@ -388,7 +405,7 @@ nav.post-controls .actions .double-button button.like .d-icon {
 // Chat
 .chat-drawer .chat-drawer-container {
     @include ClearMenuNoRounding();
-    
+
     background: $BGPrimary !important;
 }
 
@@ -398,6 +415,12 @@ nav.post-controls .actions .double-button button.like .d-icon {
     border-radius: 8px 8px 0px 0px;
 }
 
-.chat-message-container, .chat-transcript, .topic-footer-main-buttons .btn, controls ul li a, .btn-icon-text, .c-footer {
+.chat-message-container,
+.chat-transcript,
+.topic-footer-main-buttons .btn,
+controls ul li a,
+.btn-icon-text,
+.c-footer,
+.boxed.white {
     background: transparent !important
 }

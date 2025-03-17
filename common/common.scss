@@ -17,20 +17,20 @@
 }
 
 @mixin ClearMenu() {
-    backdrop-filter: blur(3rem);
+    backdrop-filter: blur(3rem) !important;
     -webkit-backdrop-filter: blur(3rem);
 
     background-color: #04080cbf !important;
-    border-radius: 18px;
-    border: none;
+    border-radius: 18px !important;
+    border: none !important;
 }
 
 @mixin ClearMenuNoRounding() {
-    backdrop-filter: blur(3rem);
+    backdrop-filter: blur(3rem) !important;
     -webkit-backdrop-filter: blur(3rem);
 
     background-color: #04080cbf !important;
-    border: none;
+    border: none !important;
 }
 
 :root {

@@ -103,7 +103,9 @@ div#main-outlet.wrap.not-found-container,
         background: $BGPrimary !important;
 }
 
-.admin-section-landing-item, .group-box {
+.admin-section-landing-item, .group-box,
+.admin-config-area-card,
+.form-kit__control-composer .d-editor-textarea-wrapper {
     @include ClearMenu()
 }
 
@@ -333,7 +335,10 @@ nav.post-controls .actions .double-button button.like .d-icon {
 }
 
 .admin-controls .controls {
-    background: transparent
+    background: transparent;
+
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .admin-nav {

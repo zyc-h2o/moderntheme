@@ -212,3 +212,14 @@ pre {
 .dropdown-menu__item {
     margin-bottom: 5px;
 }
+
+// Composer
+#reply-control {
+    @include SemiTransparentBox();
+    
+    width: 95%;
+
+    .grippie {
+        border-radius: 18px 18px 0px 0px;
+    }
+}

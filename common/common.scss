@@ -256,7 +256,7 @@ pre {
     transform: none !important;
 }
 
-.topic-list-body tr td {
-    @include ClearMenuNoRounding();
+.topic-list {
+    @include ClearMenu();
 }
 

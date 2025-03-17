@@ -120,7 +120,8 @@ div.not-found-container,
     }
 }
 
-.d-header-wrap, body.no-ember .d-header {
+.d-header-wrap,
+body.no-ember .d-header {
     @include BorderByOption("more");
 
     top: 5px;
@@ -134,7 +135,8 @@ div.not-found-container,
     position: fixed;
 
 
-    .d-header, &.d-header wrap {
+    .d-header,
+    &.d-header wrap {
         @include BorderByOption("more");
 
         top: 4px;
@@ -205,8 +207,9 @@ img:not(.admin-new-feature-item__screenshot):not(.cooked img):not(.mfp-img),
     border-radius: 15% !important;
 }
 
-.cooked img, .admin-new-feature-item__screenshot {
-    border-radius: 8px 
+.cooked img,
+.admin-new-feature-item__screenshot {
+    border-radius: 8px
 }
 
 details,
@@ -224,7 +227,7 @@ blockquote {
     border-left: 4px solid $BGPrimary !important;
 }
 
-.btn.no-text:not(.btn-transparent):not(.topic-map__views-trigger):not(.notifications-tracking-btn) {
+.btn.no-text:not(.btn-transparent):not(.topic-map__views-trigger):not(.notifications-tracking-btn):not(.show-all) {
     border-radius: 100% !important;
     aspect-ratio: 1;
 
@@ -264,7 +267,8 @@ nav.post-controls .actions .double-button button.like .d-icon {
     border-radius: 18px;
 }
 
-.dashboard-next .nav::after, .dashboard-next .nav::before {
+.dashboard-next .nav::after,
+.dashboard-next .nav::before {
     background: transparent !important
 }
 
@@ -307,6 +311,14 @@ nav.post-controls .actions .double-button button.like .d-icon {
 .dropdown-menu,
 .user-menu {
     @include ClearMenu();
+
+    .quick-access-panel ul {
+        @include ClearMenu();
+
+        .notification.read {
+            background: transparent;
+        }
+    }
 }
 
 .dropdown-menu__item {
@@ -419,7 +431,8 @@ nav.post-controls .actions .double-button button.like .d-icon {
     border-radius: 18px 18px 0px 0px;
 }
 
-.modal, .mfp-container {
+.modal,
+.mfp-container {
     backdrop-filter: blur(3rem);
 
     .d-modal__container {
@@ -510,7 +523,7 @@ controls ul li a,
     background: transparent !important;
 }
 
-.header-dropdown-toggle { 
+.header-dropdown-toggle {
     margin-left: 7px;
 }
 

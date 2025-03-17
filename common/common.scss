@@ -193,7 +193,7 @@ blockquote {
     background: rgba(var(--secondary-rgb), 0.5) !important;
     border-radius: 4px 18px 18px 4px !important;
 
-    border-left: rgba(var(--secondary-rgb), 0.5) !important;
+    border-left: 4px solid rgba(var(--secondary-rgb), 0.5) !important;
 }
 
 nav.post-controls .actions .double-button button.like,

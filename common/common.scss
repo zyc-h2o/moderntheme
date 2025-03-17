@@ -449,6 +449,10 @@ nav.post-controls .actions .double-button button.like .d-icon {
     opacity: .7
 }
 
+.selected-posts {
+    @include ClearMenu()
+}
+
 .list-controls .combo-box .combo-box-header,
 .navigation-container ol li details {
     background: none !important;

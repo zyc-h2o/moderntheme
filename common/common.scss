@@ -19,7 +19,7 @@ $BGPrimary: rgba(var(--secondary-rgb), 0.5);
 }
 
 @mixin ClearMenu() {
-    backdrop-filter: blur(3rem) !important;
+    backdrop-filter: blur(3rem);
     -webkit-backdrop-filter: blur(3rem);
 
     background: $BGPrimary !important;;
@@ -28,7 +28,7 @@ $BGPrimary: rgba(var(--secondary-rgb), 0.5);
 }
 
 @mixin ClearMenuNoRounding() {
-    backdrop-filter: blur(3rem) !important;
+    backdrop-filter: blur(3rem);
     -webkit-backdrop-filter: blur(3rem);
 
     background: $BGPrimary !important;

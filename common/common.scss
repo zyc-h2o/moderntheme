@@ -170,11 +170,13 @@ div#main-outlet.wrap.not-found-container,
     }
 }
 
-button {
+button, .controls ul li a {
     border-radius: 8px !important;
 }
 
-.topic-footer-main-buttons .btn {
+.topic-footer-main-buttons .btn,
+controls ul li a,
+.btn-icon-text {
     background: $BGPrimary !important;
 }
 
@@ -239,14 +241,15 @@ nav.post-controls .actions .double-button button.like .d-icon {
 
 .user-main .about {
     &.has-background .user-profile-image {
-        border-radius: 0px 0px 18px 18px
+        border-radius: 18px
     }
 
     .staff-counters {
         @include SemiTransparentBox();
 
-        backdrop-filter: blur(1rem);
+        margin-bottom: 5px;
         color: var(--primary);
+        backdrop-filter: blur(1rem);
     }
 
     .details {

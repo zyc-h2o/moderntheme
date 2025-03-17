@@ -176,6 +176,18 @@ button,
     transition: all .25s
 }
 
+img, .avatar-flair {
+    border-radius: 15%;
+}
+
+details,
+input,
+summary,
+pre {
+    background: rgba(var(--secondary-rgb), 0.5) !important;
+    border-radius: 18px !important;
+}
+
 nav.post-controls .actions .double-button button.like,
 nav.post-controls .actions .double-button button.like .d-icon {
     transition: all .25s;
@@ -186,13 +198,6 @@ nav.post-controls .actions .double-button button.like .d-icon {
     }
 }
 
-details,
-input,
-summary,
-pre {
-    background: rgba(var(--secondary-rgb), 0.5) !important;
-    border-radius: 18px !important;
-}
 
 // Profiles
 
@@ -292,6 +297,27 @@ pre {
 #suggested-topics-title {
     @include ClearMenuNoRounding();
 
+    padding: 10px;
+    margin-bottom: 10px;
     border-radius: 18px 18px 0px 0px;
+}
+
+.modal {
+    backdrop-filter: blur(3rem);
+
+    .d-modal__container {
+        background: transparent;
+        border-radius: 18px;
+    }
+}
+
+.user-card .card-content, .group-card .card-content {
+    backdrop-filter: blur(1rem);
+    background: transparent;
+    border-radius: 18px;
+}
+
+#user-card, .fk-d-menu {
+    border-radius: 18px;
 }
 

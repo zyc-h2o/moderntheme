@@ -233,9 +233,6 @@ pre {
     }
 }
 
-.composer-popup-container {
+.composer-popup {
     @include BorderByOption("more");
-
-    background: rgba(var(--highlight-rgb), .2);
-    backdrop-filter: blur(2rem);
 }

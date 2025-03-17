@@ -177,7 +177,7 @@ button,
 }
 
 img, .avatar-flair {
-    border-radius: 15%;
+    border-radius: 15% !important;
 }
 
 details,
@@ -318,6 +318,10 @@ nav.post-controls .actions .double-button button.like .d-icon {
 }
 
 #user-card, .fk-d-menu {
-    border-radius: 18px;
+    border-radius: 18px !important;
+}
+
+.user-badge {
+    @include ClearMenu()
 }
 

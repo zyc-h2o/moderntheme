@@ -202,7 +202,7 @@ controls ul li a,
     background: $BGPrimary !important;
 }
 
-img:not(.admin-new-feature-item__screenshot):not(.cooked img):not(.mfp-img),
+img.avatar:not(.admin-new-feature-item__screenshot):not(.cooked img):not(.mfp-img),
 .avatar-flair {
     border-radius: 15% !important;
 }

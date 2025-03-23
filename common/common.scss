@@ -561,14 +561,14 @@ controls ul li a,
     text-transform: uppercase;
 }
 
-.edit-category-nav {
+.edit-category-nav .nav {
     @include ClearMenu();
 
-    .nav:first-child a {
+    &:first-child a {
         border-radius: 18px 18px 0px 0px;
     }
 
-    .nav:last-child a {
+    &:last-child a {
         border-radius: 0px 0px 18px 18px
     }
 }

@@ -200,8 +200,13 @@ button,
 
 .topic-footer-main-buttons .btn,
 controls ul li a,
-.btn-icon-text:not(.create):not(.danger) {
+.btn-icon-text:not(.create):not(.danger),
+.user-admin {
     background: $BGPrimary !important;
+
+    &.create, &.compose-pm, &.chat-direct-message-btn {
+        color: var(--tertiary)
+    }
 }
 
 img.avatar,
@@ -235,7 +240,7 @@ blockquote {
     border-left: 4px solid $BGPrimary !important;
 }
 
-.btn.no-text:not(.btn-transparent):not(.topic-map__views-trigger):not(.notifications-tracking-btn):not(.show-all):not(.profile-tab-btn):not(.topic-drafts-menu-trigger):not(.notifications-tracking-trigger):not(.edit-category) {
+.btn.no-text:not(.btn-transparent):not(.topic-map__views-trigger):not(.show-all):not(.profile-tab-btn):not(.topic-drafts-menu-trigger):not(.notifications-tracking-trigger):not(.edit-category):not(.toggle-like):not(.topic-map__links-trigger) {
     border-radius: 100% !important;
     aspect-ratio: 1;
 

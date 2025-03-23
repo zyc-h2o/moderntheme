@@ -560,3 +560,19 @@ controls ul li a,
 
     text-transform: uppercase;
 }
+
+.edit-category-nav {
+    @include ClearMenu();
+
+    .nav:first-child a {
+        border-radius: 18px 18px 0px 0px;
+    }
+
+    .nav:last-child a {
+        border-radius: 0px 0px 18px 18px
+    }
+}
+
+div.edit-category .edit-category-title-bar {
+    @include ClearMenu()
+}

@@ -86,7 +86,8 @@ div.not-found-container,
         margin-bottom: 50px;
     }
 
-    .sidebar-wrapper, .sidebar-sections {
+    .sidebar-wrapper,
+    .sidebar-sections {
         backdrop-filter: blur(3rem) !important;
         -webkit-backdrop-filter: blur(3rem);
         background: $BGPrimary !important;
@@ -480,9 +481,14 @@ nav.post-controls .actions .double-button button.like .d-icon {
 }
 
 .alert,
-.fk-d-tooltip__content,
-.sidebar-section-link {
+.fk-d-tooltip__content {
     backdrop-filter: blur(2rem);
+
+    border-radius: 8px;
+    opacity: .7
+}
+
+.sidebar-section-link {
     border-radius: 8px;
     opacity: .7
 }

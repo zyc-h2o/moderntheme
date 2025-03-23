@@ -463,6 +463,11 @@ nav.post-controls .actions .double-button button.like .d-icon {
     }
 }
 
+.dialog-content {
+    background: transparent !important;
+    border-radius: 18px;
+}
+
 .user-card .card-content,
 .group-card .card-content {
     backdrop-filter: blur(1rem);

@@ -38,6 +38,7 @@ $BGPrimary: rgba(var(--secondary-rgb), 0.5);
 :root {
     --d-hover: rgba(var(--primary-very-low-rgb), .3) !important;
     --d-max-width: 90%;
+    --d-button-transition: all .2s linear;
 }
 
 html {
@@ -85,7 +86,7 @@ div.not-found-container,
         margin-bottom: 50px;
     }
 
-    .sidebar-wrapper {
+    .sidebar-wrapper, .sidebar-sections {
         backdrop-filter: blur(3rem) !important;
         -webkit-backdrop-filter: blur(3rem);
         background: $BGPrimary !important;
@@ -96,7 +97,7 @@ div.not-found-container,
 }
 
 // ??
-.admin-area .sidebar-wrapper .admin-panel {
+.admin-area .sidebar-wrapper {
     backdrop-filter: blur(3rem) !important;
     -webkit-backdrop-filter: blur(3rem);
     background: $BGPrimary !important;
@@ -233,7 +234,7 @@ blockquote {
     border-left: 4px solid $BGPrimary !important;
 }
 
-.btn.no-text:not(.btn-transparent):not(.topic-map__views-trigger):not(.notifications-tracking-btn):not(.show-all):not(.profile-tab-btn) {
+.btn.no-text:not(.btn-transparent):not(.topic-map__views-trigger):not(.notifications-tracking-btn):not(.show-all):not(.profile-tab-btn):not(.topic-drafts-menu-trigger):not(.notifications-tracking-trigger):not(.edit-category) {
     border-radius: 100% !important;
     aspect-ratio: 1;
 
@@ -318,10 +319,10 @@ nav.post-controls .actions .double-button button.like .d-icon {
 .user-menu {
     @include ClearMenu();
 
-    
+
     .quick-access-panel ul {
         @include ClearMenu();
-        
+
         .notification.read {
             margin-bottom: 5px;
             background: transparent;
@@ -479,7 +480,8 @@ nav.post-controls .actions .double-button button.like .d-icon {
 }
 
 .alert,
-.fk-d-tooltip__content {
+.fk-d-tooltip__content,
+.sidebar-section-link {
     backdrop-filter: blur(2rem);
     border-radius: 8px;
     opacity: .7

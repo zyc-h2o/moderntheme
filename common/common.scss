@@ -563,15 +563,17 @@ controls ul li a,
 
 .edit-category-nav .nav {
     @include ClearMenu();
+    background-color: $BGPrimary !important;
 
-    &:first-child a {
+    li:first-child a {
         border-radius: 18px 18px 0px 0px;
     }
 
-    &:last-child a {
-        border-radius: 0px 0px 18px 18px
+    li:last-child a {
+        border-radius: 0px 0px 18px 18px;
     }
 }
+
 
 div.edit-category .edit-category-title-bar {
     @include ClearMenu()

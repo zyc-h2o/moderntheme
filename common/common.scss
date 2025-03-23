@@ -452,10 +452,12 @@ nav.post-controls .actions .double-button button.like .d-icon {
 }
 
 .modal,
-.mfp-container {
+.mfp-container,
+.dialog-overlay {
     backdrop-filter: blur(3rem);
 
-    .d-modal__container {
+    .d-modal__container,
+    .dialog-content {
         background: transparent;
         border-radius: 18px;
     }

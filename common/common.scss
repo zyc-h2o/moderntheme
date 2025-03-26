@@ -45,19 +45,24 @@ html {
     overflow-x: hidden;
 }
 
-body {
-    @if $Background_Type =="tile" {
-        background-image: linear-gradient(0deg,
-                rgba(var(--secondary-rgb), 1) 0%,
-                rgba(var(--secondary-rgb), 0.75) 100%),
-            url($Background_Image);
-        background-size: $Tile_Size;
-    }
+$Background_Type: "tile"; // 或 "cover"
+$Background_Image: "你的图片链接";
+$Tile_Size: "100px 100px"; // 根据需要调整
 
-    @else {
-        background-image: url($Background_Image) !important;
-        background-size: cover;
-    }
+body {
+  @if $Background_Type == "tile" {
+    background-image: linear-gradient(0deg,
+            rgba(var(--secondary-rgb), 1) 0%,
+            rgba(var(--secondary-rgb), 0.75) 100%),
+        url($Background_Image);
+    background-size: $Tile_Size;
+    background-repeat: repeat; // 确保平铺
+  } @else {
+    background-image: url($Background_Image) !important;
+    background-size: cover;
+    background-position: center; // 居中显示
+    background-repeat: no-repeat; // 不重复
+  }
 }
 
 div.not-found-container,

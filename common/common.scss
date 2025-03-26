@@ -54,7 +54,7 @@ body {
     background-image: linear-gradient(0deg,
             rgba(var(--secondary-rgb), 1) 0%,
             rgba(var(--secondary-rgb), 0.75) 100%),
-        url($Background_Image);
+        url(/var/wallpaper.png);
     background-size: $Tile_Size;
     background-repeat: repeat; // 确保平铺
   } @else {
